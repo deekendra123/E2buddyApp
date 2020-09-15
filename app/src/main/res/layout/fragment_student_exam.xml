@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".School.Student.FragmentClass.StudentExamFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tvClassTest"
+            android:layout_below="@+id/view1"
+            >
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/refreshLayout">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical"
+                    android:layout_margin="5dp"
+
+                    android:id="@+id/recyclerViewTests"/>
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="No Test Added Yet"
+                android:layout_centerInParent="true"
+                android:id="@+id/tvTestMsg"
+
+                android:visibility="gone"
+                android:gravity="center"
+
+                android:textSize="18dp"/>
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

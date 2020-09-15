@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "833765587137",
+    "firebase_url": "https://e2buddyapp-4317e.firebaseio.com",
+    "project_id": "e2buddyapp-4317e",
+    "storage_bucket": "e2buddyapp-4317e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833765587137:android:f38556e5bcbb83272a3c40",
+        "android_client_info": {
+          "package_name": "com.aptitude.learning.e2buddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833765587137-3n6pa5m1e9odi9ah6nif8u5ecggmq0sf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aptitude.learning.e2buddy",
+            "certificate_hash": "cda7e1de9c2483ef579414bcffb88e65a8f443b3"
+          }
+        },
+        {
+          "client_id": "833765587137-3etltv6s2kge34ivrmv2dvai7ur3ib20.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-wrX4_bynMwAQLkqmqEYAyr4UdktFLOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833765587137-3etltv6s2kge34ivrmv2dvai7ur3ib20.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

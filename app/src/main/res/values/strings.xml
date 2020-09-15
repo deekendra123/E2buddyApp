@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">E2BUDDY</string>
+    <string name="skip_string"><br><font color="#FAF8F8"><b><u>Dont have a school code. Click to skip</u></b></font></br></string>
+
+    <string name="web_client_id">833765587137-3n6pa5m1e9odi9ah6nif8u5ecggmq0sf.apps.googleusercontent.com</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

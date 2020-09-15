@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    tools:context=".School.SuperAdmin.ActivityClass.SuperAdminHomeActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/relativelayout"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome UserName"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:id="@+id/tvStudentName"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textSize="18dp"/>
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="45dp"
+                android:id="@+id/imgStudent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_height="45dp"
+                android:background="@drawable/ic_userprofile"
+                android:layout_centerVertical="true"
+
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/relativelayout1"
+            android:gravity="center"
+            android:layout_below="@+id/relativelayout"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="45dp"
+                android:id="@+id/imgSchool"
+                android:layout_height="45dp"
+                android:src="@drawable/logo_e2"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="School Name"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tvSchoolName"
+                android:gravity="center_vertical"
+                android:layout_toEndOf="@+id/imgSchool"
+                android:textSize="18dp"/>
+
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:id="@+id/view1"
+            android:layout_below="@+id/relativelayout1"
+            android:background="@color/colorPrimary"/>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/relativelayout1"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <fragment
+                    android:id="@+id/frame_container"
+                    android:name="androidx.navigation.fragment.NavHostFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:defaultNavHost="true"
+                    android:layout_above="@+id/navigation"
+                    />
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/navigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="start"
+                    android:fitsSystemWindows="true"
+                    android:background="?android:attr/windowBackground"
+                    app:labelVisibilityMode="labeled"
+                    app:itemTextColor="@drawable/item_color"
+                    app:menu="@menu/super_admin_navigation"
+                    android:theme="@style/Widget.BottomNavigationView"/>
+
+
+            </RelativeLayout>
+
+        </FrameLayout>
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

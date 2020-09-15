@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:id="@+id/relativelayout2"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvQuestionId"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Question 1:"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/tvQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Whos the Prime minister of India?"
+                    android:layout_toEndOf="@+id/tvQuestionId"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#8E8D8D"
+                    android:textSize="15sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:id="@+id/relativelayout3"
+                android:layout_below="@+id/relativelayout2"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvAns"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Your Ans:"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvAnswer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_toEndOf="@+id/tvAns"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#8E8D8D"
+                    android:textSize="15sp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

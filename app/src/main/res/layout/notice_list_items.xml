@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingDefaultResource">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="today"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/tvDate"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                android:layout_below="@+id/tvDate"
+                android:id="@+id/line1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:layout_marginTop="5dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/tvTitle"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+
+                android:layout_marginTop="5dp"
+                android:id="@+id/line2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="Description"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/tvDescription"/>
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+</LinearLayout>

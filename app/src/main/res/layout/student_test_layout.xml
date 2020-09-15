@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="13"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:id="@+id/tvRollNo"
+            android:textSize="12dp"/>
+
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Student"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@+id/tvRollNo"
+            android:id="@+id/tvStudentName"
+            android:layout_marginLeft="30dp"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/tvRemark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tvStudentName"
+            android:visibility="gone"
+            android:layout_marginLeft="5dp"
+            android:text="Remarked"
+            android:layout_centerVertical="true"
+            android:textSize="9dp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/imageRemark"
+            android:layout_toEndOf="@+id/tvRemark"
+            android:background="@drawable/ic_remark"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"
+            android:layout_centerVertical="true"/>
+
+
+        <TextView
+            android:id="@+id/tvSectionName"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_toEndOf="@+id/imageRemark"
+            android:text="Section"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+
+
+        <TextView
+            android:id="@+id/tvMarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="Marks"
+            android:textColor="@color/black"
+            android:layout_marginRight="20dp"
+            android:layout_toStartOf="@+id/image"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/image"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout"
+        android:gravity="center"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/relativelayout"
+
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Remark"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:id="@+id/tvSubjectNmae"
+                android:textSize="17dp"/>
+
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bgback4"
+            android:layout_below="@+id/relativelayout"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/first_name"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etRemark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Remark" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/btAddRemark"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:textSize="15dp"
+                android:text="Add"
+                android:layout_marginLeft="5dp"
+                android:textAllCaps="false"
+                android:layout_alignParentRight="true"
+                android:textColor="#ffffff"
+                android:background="@drawable/circle1"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+
+            <Button
+                android:id="@+id/btDeleteRemark"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:textSize="15dp"
+                android:text="Delete Remark"
+                android:layout_marginLeft="5dp"
+                android:textAllCaps="false"
+                android:layout_alignParentRight="true"
+                android:textColor="#ffffff"
+                android:visibility="gone"
+                android:background="@drawable/buttons4"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+
+

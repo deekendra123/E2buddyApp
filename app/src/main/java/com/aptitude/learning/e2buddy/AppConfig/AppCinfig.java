@@ -1,0 +1,103 @@
+package com.aptitude.learning.e2buddy.AppConfig;
+
+public class AppCinfig {
+    public static String BASE_URL = "https://avmschoolldh.com/e2Buddy/e2BuddyApp/";
+    public static String BASE_IMAGE_URL = BASE_URL + "imageTrickQuestion/";
+    public static String BASE_WORD_IMAGE_URL = BASE_URL + "imageWordOfTheDay/";
+    public static String BASE_SCHOOL_IMAGE_URL = BASE_URL + "schoolLogo/";
+
+    public static String URL_LOGIN = BASE_URL+ "userLogin.php";
+    public static String URL_SCHOOL_DETAILS = BASE_URL + "getSchoolCode.php";
+    public static String URL_UPDATE_USER_INFO = BASE_URL+ "updateUserInfo.php";
+    public static String URL_TRICK_QUESTION = BASE_URL +"getTrickQuestion.php";
+    public static String URL_INSERT_TRICKQUESTION_ANSWER = BASE_URL+ "insertTrickQuestionsAnswer.php";
+    public static String URL_WORD_QUESTION = BASE_URL+ "getWordCoachQuestion.php";
+    public static String URL_INSERT_WORD_ANSWER = BASE_URL+ "insertWordCoachAnswer.php";
+    public static String URL_WORD_IMAGES = BASE_URL+ "getWordOfTheDay.php";
+    public static String URL_WORD_PUZZLES = BASE_URL + "getWordSearchPuzzleLetter.php";
+    public static String URL_WORD_PLUZZLE_WORD = BASE_URL + "getWordSearchPuzzleWord.php";
+    public static String URL_INSER_PUZZLE_ANSWER = BASE_URL + "insertWordSearchPuzzleAnswer.php";
+    public static String URL_SCHOOL_INFO = BASE_URL+ "getSchoolInfo.php";
+    public static String URL_SCHOOL_CLASS = BASE_URL + "getSchoolClass.php";
+    public static String URL_SCHOOL_SECTION = BASE_URL+ "getSchoolSection.php";
+    public static String URL_SCHOOL_SUBJECT = BASE_URL+ "getSchoolSubject.php";
+    public static String URL_INSERT_TEST_DATA = BASE_URL+ "insertTestData.php";
+    public static String URL_INSERT_QUESTION = BASE_URL+"insertSchoolQuestion.php";
+    public static String URL_DELETE_QUESTION = BASE_URL+ "deleteSchoolQuestion.php";
+    public static String URL_FETCH_QUESTION = BASE_URL+ "getSchoolQuestion.php";
+    public static String URL_TEST_DETAILS = BASE_URL+ "getTestDetail.php";
+    public static String URL_DELETE_TEST = BASE_URL+ "deleteSchoolTest.php";
+    public static String URL_UPDATE_TEST = BASE_URL+ "updateSchoolTest.php";
+    public static String URL_TEST_ID = BASE_URL+"getTestId.php";
+    public static String URL_SECTION = BASE_URL+"getSection.php";
+    public static String URL_STUDENT_TEST = BASE_URL+"getStudentTest.php";
+    public static String URL_ADMIN_DETAIL = BASE_URL+ "getAdminDetail.php";
+    public static String URL_SUBJECT_DETAIL = BASE_URL+ "getSubjectDetail.php";
+    public static String URL_STUDENT_QUESTION = BASE_URL+"getStudentQuestion.php";
+    public static String URL_INSERT_STUDENT_ANSWER = BASE_URL+"insertStudentAnswer.php";
+    public static String URL_STUDENT_ANSWER = BASE_URL+"getStudentAnswer.php";
+    public static String URL_INSERT_TEST_MARKS = BASE_URL+"insertStudentTestMarks.php";
+    public static String URL_STUDENT_TEST_STATUS = BASE_URL+ "getTestStatus.php";
+    public static String URL_TOTAL_QUESTION = BASE_URL+"getTotalQuestion.php";
+    public static String URL_OPTIONS = BASE_URL+"getQuestionOption.php";
+    public static String URL_STUDENT_SECTION = BASE_URL+ "getStudentSection.php";
+    public static String URL_STUDENT_TEST_DATA = BASE_URL+"getStudentTestData.php";
+    public static String URL_TEST_TIME_LEFT = BASE_URL+"getTestTimeLeft.php";
+    public static String URL_GET_TEST = BASE_URL+"getTest.php";
+    public static String URL_UPDATE_TEST_DATA = BASE_URL+"updateTestData.php";
+    public static String URL_CHECK_ADMISSION_NO = BASE_URL+"checkAdmissionNo.php";
+    public static String URL_STUDENT_RESULT = BASE_URL+"getStudentResult.php";
+    public static String URL_SEND_NOTIFICATION = BASE_URL+"sendTestNotification.php";
+    public static String URL_INSERT_REMARK = BASE_URL+"insertTestRemark.php";
+    public static String URL_INSERT_NOTICE = BASE_URL+"insertClassNotice.php";
+    public static String URL_GET_NOTICE = BASE_URL+"getClassNotice.php";
+    public static String URL_UPDATE_ADMIN = BASE_URL+"updateAdminDetails.php";
+    public static String URL_UPDATE_STUDENT_ANSWER = BASE_URL+"updateStudentAnswer.php";
+
+    public static String URL_SUPER_LOGIN = BASE_URL+"login.php";
+    public static String URL_UPDATE_TEST1 = BASE_URL+"updateTest.php";
+    public static String URL_ADD_TEACHER = BASE_URL+"superAdminAddTeacher.php";
+    public static String URL_GET_TEACHER = BASE_URL+"superAdminGetTeacher.php";
+    public static String URL_NOTICE = BASE_URL+"superAdminGetNotice.php";
+    public static String URL_UPDATE_TEACHER = BASE_URL+"superAdminUpdateTeacherDetails.php";
+    public static String URL_DELETE_TEACHER = BASE_URL+"superAdminDeleteTeacher.php";
+    public static String URL_NOTICE_ID = BASE_URL+"superAdminGetNoticeId.php";
+    public static String URL_NOTICE_SECTION_ID = BASE_URL + "superAdminGetStudentSection.php";
+    public static String URL_ADD_NOTICE = BASE_URL+"superAdminAddNotice.php";
+    public static String URL_SEND_NOTICE_NOTIFICATION = BASE_URL+"sendNoticeNotification.php";
+    public static String URL_GET_ALL_SECTION = BASE_URL+"getAllSection.php";
+    public static String URL_GET_ALL_SUBJECT = BASE_URL+"getAllSubject.php";
+
+    public static String URL_GET_CLASS_TEST_ID = BASE_URL+"getClassTestId.php";
+    public static String URL_GET_ALL_CLASS_TEST_DATA = BASE_URL+"getAllTestData.php";
+    public static String URL_GET_ALL_CLASS_TEST_QUESTION_DATA = BASE_URL+"getAllClassTestQuestion.php";
+    public static String URL_UPDATE_ADMIN_TEST_DATA = BASE_URL+"adminUpdateTest.php";
+    public static String URL_UPDATE_STUDENT_MARKS = BASE_URL+"insertStudentMarks.php";
+    public static String INSERT_STUDENT_ANSWER = BASE_URL+"studentInsertAnswer.php";
+
+    public static String GET_ALL_STUDENT_SUBJECT = BASE_URL+"studentGetSchoolSubject.php";
+    public static String GET_ADMIN_TOTAL_QUESTION = BASE_URL+"adminGetTotalQuestion.php";
+    public static String GET_USER_DATA = BASE_URL+"adminGetUserData.php";
+    public static String GET_ADMIN_DATA = BASE_URL+"getAdminData.php";
+    public static String GET_STUDENT_ANSWER = BASE_URL+"adminGetStudentAnswer.php";
+    public static String GET_TIME_LEFT = BASE_URL+"adminGetTimeLeft.php";
+    public static String GET_STUDENT_MARKS = BASE_URL+"adminGetStudentMarks.php";
+    public static String GET_ALL_CLASS_TEST = BASE_URL+"studentGetAllClassTestData.php";
+    public static String GET_TOTAL_ANSWER = BASE_URL+"studentGetTotalAnswer.php";
+    public static String GET_EXAM = BASE_URL+"studentGetExam.php";
+    public static String GET_EXAM_QUESTION = BASE_URL+"studentGetExamQuestion.php";
+    public static String INSERT_EXAM_ANSWER = BASE_URL+"studentExamInsertAnswer.php";
+    public static String GET_EXAM_ANSWER = BASE_URL+"studentGetExamAnswer.php";
+    public static String INSERT_EXAM_MARKS = BASE_URL+"studentInsertExamMark.php";
+    public static String GET_EXAM_ID = BASE_URL+"adminGetExamId.php";
+    public static String GET_EXAM_TIME = BASE_URL+"adminGetExamType.php";
+    public static String UPDATE_EXAM_DATA = BASE_URL+"adminUpdateExam.php";
+    public static String INSERT_EXAM_QUESTION = BASE_URL+"adminInsertExamQuestion.php";
+    public static String DELETE_EXAM =  BASE_URL +"adminDeleteExam.php";
+    public static String UPDATE_EXAM_STATUS = BASE_URL+"studentUpdateExamStatus.php";
+    public static String GET_STUDENT_EXAM_STATUS = BASE_URL+"adminGetExamStatus.php";
+    public static String GET_STUDENT_EXAM_MARKS = BASE_URL+"adminGetAllStudentExamMarks.php";
+    public static String GET_ALL_EXAM = BASE_URL+"adminGetAllExam.php";
+}
+
+

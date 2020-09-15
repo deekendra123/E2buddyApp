@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp">
+
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="Student"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:id="@+id/tvStudentName"
+            android:layout_marginLeft="15dp"
+            android:textSize="15dp"/>
+
+
+
+
+        <TextView
+            android:id="@+id/tvSectionName"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Section"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/tvMarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="Marks"
+            android:textColor="@color/black"
+            android:layout_marginRight="20dp"
+            android:layout_toStartOf="@+id/image"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/image"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

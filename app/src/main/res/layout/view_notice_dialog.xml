@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/lay"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/cardView">
+
+            <ImageButton
+                android:id="@+id/fullscreen_dialog_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="8dp"
+                app:srcCompat="@drawable/ic_clear_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:layout_marginTop="13dp"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:id="@+id/tvDate"
+                android:layout_marginRight="15dp"
+                android:text="Date" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="17dp"
+                android:layout_toStartOf="@+id/webLink"
+                android:textStyle="bold"
+                android:id="@+id/tvTitle"
+                android:layout_marginTop="120dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:text="Title of the notice" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/webLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                app:backgroundTint="@color/colorPrimary"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/ic_web" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="0dp"
+                android:layout_marginTop="160dp"
+                android:layout_marginRight="13dp"
+                android:layout_marginLeft="13sp"
+                app:cardElevation="4dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignStart="@+id/cardView">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:id="@+id/tvDescription"
+
+                        android:textSize="15dp"
+
+                        android:text="In this post, I’ll show you how to implement the navigation architecture component in your app in Android. For demonstration will create a sample app and will integrate the navigation component in this app. This sample app contains the bottom navigation bar and toolbar menu with navigation components. So let’s get started.\n\nNow open the app level project build.gradle and this line on top of the file. This plug is helped us a lot in navigation, action and sending argument as well. Open the main activity, In this activity, we are setting bottom navigation, side navigation (for landscape mode) and setting up action menu as well.
+In this article, I’ll show how we can send an FCM message from an android device. in other words, you can say, will tell send android firebase push notifications device to device. How to do that, Let’s get started.\n\nIn this article, I’m going to show you the implementation auto-read OTP using SMS User Consent API. It is complements of SMS Retriever API. Using SMS User Consent API we can achieve auto read OTP by allowing an app to prompt the user to grant access to the content of a single SMS message. When the user gives consent, the app can access the entire message to automatically complete SMS verification.\n\nOpen to an android studio and create a new project. That project we will implement auto read OTP features. So I’m adding few strings in strings.xml file that we will use this project. The next step is to listen to incoming messaging. we can start listening for incoming messages using below method. We can add sender phone number, SMS User Consent API will only trigger on messages from this number. I’m adding null here" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

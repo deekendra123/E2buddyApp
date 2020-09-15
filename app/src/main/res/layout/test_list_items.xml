@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/cardView"
+        android:layout_below="@+id/view1"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="5dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:id="@+id/layout2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Test Name"
+
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+
+
+                    android:gravity="center"
+
+                    android:id="@+id/tvTestName"
+                    android:textStyle="bold"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/layout11"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="09"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="35dp"
+                        android:id="@+id/tvDate"
+                        android:gravity="center"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="May"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="22dp"
+                        android:id="@+id/tvMonth"
+                        android:gravity="center"
+                        tools:ignore="VectorDrawableCompat" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toEndOf="@+id/layout11"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/view"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginTop="50dp"
+
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/layout12"
+                    android:layout_toEndOf="@+id/view"
+                    android:gravity="center"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/layout"
+                        android:layout_marginLeft="1dp"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Subject"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18dp"
+                            android:gravity="center"
+                            android:id="@+id/tvSubject"
+                            tools:ignore="VectorDrawableCompat" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15dp"
+                            android:id="@+id/tvSubjectNmae"
+                            android:gravity="center"
+                            tools:ignore="VectorDrawableCompat" />
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgSchoolLogo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toEndOf="@+id/layout12"
+                    android:layout_gravity="center"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+
+                        android:id="@+id/tvMaxMarks"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12dp"
+                        tools:ignore="VectorDrawableCompat" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12dp"
+                        android:id="@+id/tvPassMarks"
+                        tools:ignore="VectorDrawableCompat" />
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Added By: User"
+                android:layout_marginTop="5dp"
+                android:textSize="12dp"
+                android:id="@+id/tvAddedBy"
+                android:layout_above="@+id/tvStartTest"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                tools:ignore="VectorDrawableCompat" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/tvStartTest"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:textSize="18dp"/>
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

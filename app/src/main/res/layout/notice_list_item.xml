@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:id="@+id/cardView"
+        android:layout_below="@+id/view1"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="5dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Class: "
+
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:id="@+id/tvClassName"
+                android:gravity="center"
+                android:textSize="12dp"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:id="@+id/layout2"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/layout11"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="09"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="35dp"
+                        android:id="@+id/tvDate"
+                        android:gravity="center"
+                        tools:ignore="VectorDrawableCompat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="May"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18dp"
+                        android:id="@+id/tvMonth"
+                        android:gravity="center"/>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dp"
+
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toEndOf="@+id/layout11"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/view"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginTop="50dp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/layout12"
+                    android:layout_toEndOf="@+id/view"
+                    android:gravity="center"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/layout"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="1dp"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Title"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18dp"
+                            android:gravity="center"
+                            android:id="@+id/tvTitle"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Description"
+                            android:layout_marginTop="5dp"
+                            android:maxLines="1"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15dp"
+                            android:id="@+id/tvDescription"
+                            android:gravity="center"
+                            tools:ignore="VectorDrawableCompat" />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/tvSection"
+                android:gravity="center"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Section: "
+                android:layout_marginBottom="10dp"
+                android:layout_toStartOf="@+id/tvSection"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/tvSectionName"
+                android:gravity="center"
+                android:textSize="12dp"/>
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

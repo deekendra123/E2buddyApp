@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+
+                android:id="@+id/relativelayout2"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvQuestionId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ques 1:"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tvQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Question"
+                    android:layout_toEndOf="@+id/tvQuestionId"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#8E8D8D"
+                    android:textSize="16sp"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+
+                android:orientation="vertical"
+                android:layout_below="@+id/relativelayout2"
+                android:layout_marginTop="10dp"
+
+                >
+
+                <CheckBox
+                    android:id="@+id/option1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Option1"
+                    android:layout_above="@+id/button"
+                    android:textColor="#8E8D8D"
+                    android:layout_centerHorizontal="true" />
+                <CheckBox
+                    android:id="@+id/option2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#8E8D8D"
+                    android:text="Option2"
+                    android:layout_above="@+id/button"
+                    android:layout_centerHorizontal="true" />
+
+                <CheckBox
+                    android:id="@+id/option3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#8E8D8D"
+                    android:text="Option3"
+                    android:layout_above="@+id/button"
+                    android:layout_centerHorizontal="true" />
+
+                <CheckBox
+                    android:id="@+id/option4"
+                    android:layout_width="wrap_content"
+                    android:textColor="#8E8D8D"
+                    android:layout_height="wrap_content"
+                    android:text="Option4"
+                    android:layout_marginBottom="5dp"
+                    android:layout_above="@+id/button"
+                    android:layout_centerHorizontal="true" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

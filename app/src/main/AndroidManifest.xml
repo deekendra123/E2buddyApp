@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aptitude.learning.e2buddy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name=".ApplicationClass.E2buddyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".School.Admin.ActivityClass.AdminStudentExamResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <service
+            android:name=".Service.OnClearFromRecentService"
+            android:stopWithTask="false" />
+
+        <activity
+            android:name=".School.Admin.ActivityClass.AdminTestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".School.Admin.ActivityClass.ViewExamStudentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".School.Student.ActivityClass.StudentExamAnswerReviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".School.Student.ActivityClass.ExamInstructionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".School.Admin.ActivityClass.AdminUpdateExamActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".School.Admin.ActivityClass.AdminExamActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".School.Admin.ActivityClass.AdminExamQuestionReviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".School.Admin.ActivityClass.AdminExamQuestionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".School.Admin.ActivityClass.AdminAddExamActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".School.Student.ActivityClass.StudentExamQuestionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".School.SuperAdmin.ActivityClass.ViewWebLinkActivity" />
+        <activity android:name=".School.SuperAdmin.ActivityClass.SuperAdminAddTeacherActivity" />
+        <activity
+            android:name=".School.SuperAdmin.ActivityClass.SuperAdminHomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".School.SuperAdmin.ActivityClass.SuperAdminConfirmationActivity" />
+        <activity
+            android:name=".School.SuperAdmin.ActivityClass.SuperAdminAddNoticeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".School.Admin.ActivityClass.AdminUpdateTestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".School.Admin.ActivityClass.AdminViewStudentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".School.Student.ActivityClass.StudHomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ActivityClass.UserDetailsActivity" />
+        <activity
+            android:name=".School.Student.ActivityClass.StudentResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".School.Student.ActivityClass.StudentAnswerReviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".School.Student.ActivityClass.StudentQuestionsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".School.Student.ActivityClass.StudentTestInstructionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".School.Student.ActivityClass.StudentConfirmationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".School.Admin.ActivityClass.AdminQuestionReviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".School.Admin.ActivityClass.AdminAddQuestionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".School.Admin.ActivityClass.AdminAddTestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".School.Admin.ActivityClass.AdminHomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".School.Admin.ActivityClass.AdminConfirmationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityClass.HomeNavActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ActivityClass.ViewDescriptionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".School.Student.ActivityClass.StudentDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityClass.School_Code_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ActivityClass.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityClass.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ActivityClass.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".PushNotification.FirebaseMessagingSerivce">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo_e2" />
+    </application>
+
+</manifest>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layout"
+        android:gravity="center"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/relativelayout"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Science"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:id="@+id/tvTestName"
+                android:textSize="17dp"/>
+
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bgback4"
+            android:layout_below="@+id/relativelayout"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+
+
+            <Button
+                android:id="@+id/btViewStudents"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:textSize="15dp"
+                android:text="View Test Result"
+                android:layout_marginLeft="5dp"
+                android:textAllCaps="false"
+                android:layout_alignParentRight="true"
+                android:textColor="#ffffff"
+                android:background="@drawable/circle1"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+
+

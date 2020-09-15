@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:id="@+id/scrollView">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/relativelayout"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/line1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:text="heading"
+                        android:textColor="#ffffff"
+                        android:background="@drawable/buttons2"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/tvHeading"
+                        android:gravity="center"
+                        android:textSize="8dp"/>
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:text="4/5"
+                        android:id="@+id/questionnumber"
+                        android:textColor="#ffffff"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/buttons5"
+                        android:textSize="8dp"/>
+
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"
+                    app:cardElevation="0dp">
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="440dp"
+                        android:scaleType="fitXY"
+
+                        android:id="@+id/imgQuestion"/>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/cardView"
+
+                    android:layout_marginTop="8dp"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="2"
+
+                        android:id="@+id/liner">
+
+                        <Button
+                            android:id="@+id/rdops1"
+                            android:layout_width="0dp"
+                            android:layout_height="65dp"
+                            android:text="option 1"
+                            android:layout_alignParentLeft="true"
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff"
+                            android:background="@drawable/buttons1"
+
+                            android:textStyle="bold"
+                            android:layout_weight="1"
+                            android:textSize="13dp"
+
+
+                            />
+
+                        <Button
+                            android:id="@+id/rdops2"
+                            android:layout_width="0dp"
+                            android:layout_height="65dp"
+                            android:background="@drawable/buttons1"
+                            android:textSize="13dp"
+                            android:text="option 2"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:textAllCaps="false"
+                            android:layout_alignParentRight="true"
+                            android:textColor="#ffffff" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/liner"
+                        android:layout_weight="2"
+                        android:layout_marginTop="5dp"
+
+                        >
+
+
+                        <Button
+                            android:id="@+id/rdops3"
+                            android:layout_width="0dp"
+                            android:background="@drawable/buttons1"
+                            android:layout_height="65dp"
+                            android:textStyle="bold"
+                            android:text="option 3"
+                            android:textAllCaps="false"
+                            android:layout_alignParentLeft="true"
+
+                            android:layout_weight="1"
+                            android:textSize="13dp"
+                            android:textAlignment="center"
+                            android:textColor="#ffffff" />
+
+                        <Button
+                            android:id="@+id/rdops4"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textAllCaps="false"
+                            android:layout_height="65dp"
+
+                            android:layout_marginLeft="5dp"
+                            android:textStyle="bold"
+                            android:textSize="13dp"
+                            android:background="@drawable/buttons1"
+                            android:layout_alignParentRight="true"
+
+                            android:text="option 4"
+
+                            android:textColor="#ffffff" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp"
+
+                    android:visibility="visible"
+                    android:id="@+id/relativelayout"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="110dp"
+                        android:layout_height="40dp"
+                        android:text="SOLUTION"
+                        android:textColor="#ffffff"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:id="@+id/tvSolution"
+                        android:background="@drawable/circle2"/>
+
+                    <TextView
+                        android:id="@+id/btNext"
+                        android:layout_width="110dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/circle2"
+                        android:text="next"
+                        android:textColor="#ffffff"
+                        android:gravity="center"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="10dp"
+                        android:textAllCaps="true"
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
